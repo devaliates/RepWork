@@ -1,10 +1,33 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>0.0.1</Version>
+    <SignAssembly>False</SignAssembly>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Ali Ateş</Authors>
+    <Company>Ali Ateş</Company>
+    <Description>Generic Repository and Unit Of Work</Description>
+    <Copyright>2022</Copyright>
+    <PackageProjectUrl>https://github.com/devaliates/RepWork</PackageProjectUrl>
+    <PackageIcon>RepWorkIcon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/devaliates/RepWork</RepositoryUrl>
+    <PackageTags>Generic Repository and Unit Of Work</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\docs\RepWorkIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
