@@ -16,6 +16,8 @@
     <PackageIcon>RepWorkIcon.png</PackageIcon>
     <RepositoryUrl>https://github.com/devaliates/RepWork</RepositoryUrl>
     <PackageTags>Generic Repository and Unit Of Work</PackageTags>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
