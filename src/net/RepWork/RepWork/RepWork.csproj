@@ -1,24 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>0.0.1</Version>
-    <SignAssembly>False</SignAssembly>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Authors>Ali Ateş</Authors>
-    <Company>Ali Ateş</Company>
-    <Description>Generic Repository and Unit Of Work</Description>
-    <Copyright>2022</Copyright>
-    <PackageProjectUrl>https://github.com/devaliates/RepWork</PackageProjectUrl>
-    <PackageIcon>RepWorkIcon.png</PackageIcon>
-    <RepositoryUrl>https://github.com/devaliates/RepWork</RepositoryUrl>
-    <PackageTags>Generic Repository and Unit Of Work</PackageTags>
-    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-  </PropertyGroup>
+	<PropertyGroup>
+		<Title>RepWork</Title>
+	    <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Version>0.0.1</Version>
+        <SignAssembly>False</SignAssembly>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Authors>Ali Ateş</Authors>
+        <Company>Ali Ateş</Company>
+        <Description>Generic Repository and Unit Of Work</Description>
+        <Copyright>2022</Copyright>
+        <PackageProjectUrl>https://github.com/devaliates/RepWork</PackageProjectUrl>
+        <PackageIcon>RepWorkIcon.png</PackageIcon>
+        <RepositoryUrl>https://github.com/devaliates/RepWork</RepositoryUrl>
+        <PackageTags>Generic Repository and Unit Of Work</PackageTags>
+        <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\..\..\..\docs\RepWorkIcon.png">
