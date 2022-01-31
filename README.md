@@ -1,6 +1,6 @@
-﻿# Unit Of Work Example
+# RepWork (Repository & Unit Of Work)
 
-  Birden fazla DbContext' e sahip Unit Of Work ve Generic Repository Pattern örneği.
+  Birden fazla DbContext' e sahip Unit Of Work ve Generic Repository kütüphanesi.
 
 ## Multi DbContext
 
