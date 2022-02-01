@@ -1,10 +1,10 @@
 ﻿namespace RepWork.UnitOfWork;
 
 public class UnitOfWorkBase<TDbContext>
-    : IUnitOfWork
+    : IUnitOfWork<TDbContext>
     where TDbContext : DbContext, new()
 {
-    protected TDbContext context;
+    private TDbContext context;
     private bool disposed;
     private IDbContextTransaction? transaction;
 
@@ -14,7 +14,7 @@ public class UnitOfWorkBase<TDbContext>
         this.disposed = false;
     }
 
-    public async Task<UnitOfWorkBase<TDbContext>> BeginTransactionAsync()
+    public async Task<IUnitOfWork<TDbContext>> BeginTransactionAsync()
     {
         this.transaction = await context.Database.BeginTransactionAsync();
         return await Task.FromResult(this);
