@@ -8,7 +8,7 @@
 /// Farklı DbContextleri DI yapmayı sağlar.
 /// Eğer iki farklı DbContext varsa TDbContext ile ayrıla bilir.
 /// </typeparam>
-public interface IRepositoryBase<TEntity>
+public interface IRepository<TEntity>
     where TEntity : class, new()
 {
     public Task<IEnumerable<TEntity>> Get(
