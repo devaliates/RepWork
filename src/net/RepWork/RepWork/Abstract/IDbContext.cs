@@ -1,4 +1,4 @@
-﻿namespace RepWork.Abstract.Context;
+﻿namespace RepWork.Abstract;
 
 /// <summary>
 /// Örneğin DbContext olduğunu işaretler.

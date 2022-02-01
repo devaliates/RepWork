@@ -1,4 +1,4 @@
-﻿namespace RepWork.Abstract.UnitOfWork;
+﻿namespace RepWork.Abstract;
 
 public interface IUnitOfWork
     : IDisposable
