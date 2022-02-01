@@ -1,4 +1,4 @@
-﻿namespace RepWork.Abstract.Repository;
+﻿namespace RepWork.Abstract;
 
 /// <summary>
 /// Generic Repository
