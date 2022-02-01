@@ -1,4 +1,4 @@
-﻿namespace RepWork.Repository.EntityFrameworkCore;
+﻿namespace RepWork.Repository;
 
 public class EfRepositoryBase<TEntity, TDbContext>
     : IRepositoryBase<TEntity>
