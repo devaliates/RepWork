@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32104.313
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepWork", "RepWork\RepWork.csproj", "{44D2DBD7-3496-4F1E-9095-EBE561B7B8E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepWork", "RepWork\RepWork.csproj", "{44D2DBD7-3496-4F1E-9095-EBE561B7B8E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{A3F4A972-4AF5-4AB3-A416-1D3A99B13FA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepWork.RepositoryLayerExample", "..\..\..\examples\net\RepWork.RepositoryLayerExample\RepWork.RepositoryLayerExample.csproj", "{D84FD4D1-9A4A-4387-BB9C-DF713B606661}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepWork.ServiceLayerExample", "..\..\..\examples\net\RepWork.ServiceLayerExample\RepWork.ServiceLayerExample.csproj", "{AF6FB240-F4C9-43E2-B8B4-2CC3DCE19E26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepWork.WebApiExample", "..\..\..\examples\net\RepWork.WebApiExample\RepWork.WebApiExample.csproj", "{75346157-D141-4AF9-8FC9-343ACEBF957A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +23,26 @@ Global
 		{44D2DBD7-3496-4F1E-9095-EBE561B7B8E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44D2DBD7-3496-4F1E-9095-EBE561B7B8E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44D2DBD7-3496-4F1E-9095-EBE561B7B8E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D84FD4D1-9A4A-4387-BB9C-DF713B606661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D84FD4D1-9A4A-4387-BB9C-DF713B606661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D84FD4D1-9A4A-4387-BB9C-DF713B606661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D84FD4D1-9A4A-4387-BB9C-DF713B606661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF6FB240-F4C9-43E2-B8B4-2CC3DCE19E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6FB240-F4C9-43E2-B8B4-2CC3DCE19E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6FB240-F4C9-43E2-B8B4-2CC3DCE19E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6FB240-F4C9-43E2-B8B4-2CC3DCE19E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75346157-D141-4AF9-8FC9-343ACEBF957A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75346157-D141-4AF9-8FC9-343ACEBF957A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75346157-D141-4AF9-8FC9-343ACEBF957A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75346157-D141-4AF9-8FC9-343ACEBF957A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D84FD4D1-9A4A-4387-BB9C-DF713B606661} = {A3F4A972-4AF5-4AB3-A416-1D3A99B13FA6}
+		{AF6FB240-F4C9-43E2-B8B4-2CC3DCE19E26} = {A3F4A972-4AF5-4AB3-A416-1D3A99B13FA6}
+		{75346157-D141-4AF9-8FC9-343ACEBF957A} = {A3F4A972-4AF5-4AB3-A416-1D3A99B13FA6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2906132-9514-460D-AC5A-563B25CA0E0B}

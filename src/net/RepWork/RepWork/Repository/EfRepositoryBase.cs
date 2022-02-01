@@ -1,14 +1,13 @@
 ﻿namespace RepWork.Repository;
 
-public class EfRepositoryBase<TEntity, TDbContext>
+public class EfRepositoryBase<TEntity>
     : IRepository<TEntity>
-    where TEntity : class, new()
-    where TDbContext : DbContext, new()
+    where TEntity : class, IEntity, new()
 {
-    private readonly TDbContext context;
+    private readonly DbContext context;
     private readonly DbSet<TEntity> dbSet;
 
-    public EfRepositoryBase(TDbContext context)
+    public EfRepositoryBase(DbContext context)
     {
         this.context = context;
         this.dbSet = context.Set<TEntity>();
@@ -81,7 +80,7 @@ public class EfRepositoryBase<TEntity, TDbContext>
         await Task.CompletedTask;
     }
 
-    public async Task Save()
+    public virtual async Task Save()
     {
         int r = await this.context.SaveChangesAsync();
 

@@ -9,7 +9,7 @@
 /// Eğer iki farklı DbContext varsa TDbContext ile ayrıla bilir.
 /// </typeparam>
 public interface IRepository<TEntity>
-    where TEntity : class, new()
+    where TEntity : class, IEntity, new()
 {
     public Task<IEnumerable<TEntity>> Get(
         Expression<Func<TEntity, bool>>? filter = null,

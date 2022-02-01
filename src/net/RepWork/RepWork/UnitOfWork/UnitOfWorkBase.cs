@@ -1,23 +1,21 @@
 ﻿namespace RepWork.UnitOfWork;
 
-public class UnitOfWorkBase<TDbContext>
-    : IUnitOfWork<TDbContext>
-    where TDbContext : DbContext, new()
+public class EfUnitOfWorkBase
+    : IUnitOfWork
 {
-    private TDbContext context;
+    private DbContext context;
     private bool disposed;
     private IDbContextTransaction? transaction;
 
-    public UnitOfWorkBase(TDbContext context)
+    public EfUnitOfWorkBase(DbContext context)
     {
         this.context = context;
         this.disposed = false;
     }
 
-    public async Task<IUnitOfWork<TDbContext>> BeginTransactionAsync()
+    public async Task BeginTransactionAsync()
     {
         this.transaction = await context.Database.BeginTransactionAsync();
-        return await Task.FromResult(this);
     }
 
     public void Dispose()

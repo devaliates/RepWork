@@ -1,9 +1,9 @@
 ﻿namespace RepWork.Abstract;
 
-public interface IUnitOfWork<TDbContext>
+public interface IUnitOfWork
     : IDisposable
 {
-    public Task<IUnitOfWork<TDbContext>> BeginTransactionAsync();
+    public Task BeginTransactionAsync();
 
     public Task<int> Save();
 }
