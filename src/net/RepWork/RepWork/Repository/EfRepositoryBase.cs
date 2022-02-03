@@ -1,6 +1,6 @@
 ﻿namespace RepWork.Repository;
 
-public class EfRepositoryBase<TEntity>
+public abstract class EfRepositoryBase<TEntity>
     : IRepository<TEntity>
     where TEntity : class, IEntity, new()
 {

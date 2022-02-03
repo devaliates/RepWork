@@ -2,7 +2,7 @@
 using RepWork.RepositoryLayerExample.EntityFrameworkCore;
 using RepWork.UnitOfWork;
 
-namespace RepWork.ServiceLayerExample.UnitOfWork;
+namespace RepWork.RepositoryLayerExample.UnitOfWork;
 
 public class ExampleUnitOfWork
     : EfUnitOfWorkBase, IExampleUnitOfWork

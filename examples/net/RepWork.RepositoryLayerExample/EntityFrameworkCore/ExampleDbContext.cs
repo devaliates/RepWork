@@ -14,6 +14,24 @@ public class ExampleDbContext
     {
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<UserProduct>()
+        .HasKey(up => new { up.UserId, up.ProductId });
+
+        modelBuilder.Entity<UserProduct>()
+            .HasOne(up => up.User)
+            .WithMany(u => u.UserProducts)
+            .HasForeignKey(up => up.UserId);
+
+        modelBuilder.Entity<UserProduct>()
+            .HasOne(up => up.Product)
+            .WithMany(p => p.UserProducts)
+            .HasForeignKey(up => up.ProductId);
+
+        base.OnModelCreating(modelBuilder);
+    }
+
     //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     //{
     //    optionsBuilder

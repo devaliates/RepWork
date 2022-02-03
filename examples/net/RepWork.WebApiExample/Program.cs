@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 
 using RepWork.RepositoryLayerExample.EntityFrameworkCore;
+using RepWork.RepositoryLayerExample.UnitOfWork;
 using RepWork.ServiceLayerExample;
 using RepWork.ServiceLayerExample.Abstract;
-using RepWork.ServiceLayerExample.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 

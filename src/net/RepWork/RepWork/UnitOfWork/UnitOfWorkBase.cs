@@ -1,6 +1,6 @@
 ﻿namespace RepWork.UnitOfWork;
 
-public class EfUnitOfWorkBase
+public abstract class EfUnitOfWorkBase
     : IUnitOfWork
 {
     private DbContext context;

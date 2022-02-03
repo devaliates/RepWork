@@ -9,6 +9,8 @@ public class User
     public string Username { get; set; }
     public string Password { get; set; }
 
+    public virtual ICollection<UserProduct>? UserProducts { get; set; }
+
     public User()
     {
         this.Username = string.Empty;

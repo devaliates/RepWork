@@ -1,7 +1,7 @@
 ﻿using RepWork.RepositoryLayerExample.Entities;
+using RepWork.RepositoryLayerExample.UnitOfWork;
 using RepWork.ServiceLayerExample.Abstract;
 using RepWork.ServiceLayerExample.Dtos;
-using RepWork.ServiceLayerExample.UnitOfWork;
 
 namespace RepWork.ServiceLayerExample;
 

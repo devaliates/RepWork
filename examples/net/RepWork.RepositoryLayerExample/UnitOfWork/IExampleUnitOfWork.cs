@@ -1,7 +1,7 @@
 ﻿using RepWork.Abstract;
 using RepWork.RepositoryLayerExample.Abstract;
 
-namespace RepWork.ServiceLayerExample.UnitOfWork;
+namespace RepWork.RepositoryLayerExample.UnitOfWork;
 
 public interface IExampleUnitOfWork
     : IUnitOfWork

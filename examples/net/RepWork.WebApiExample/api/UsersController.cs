@@ -3,7 +3,7 @@
 using RepWork.ServiceLayerExample.Abstract;
 using RepWork.ServiceLayerExample.Dtos;
 
-namespace RepWork.WebApiExample.Controllers;
+namespace RepWork.WebApiExample.api;
 
 [Route("api/[controller]")]
 [ApiController]
